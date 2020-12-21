@@ -1,15 +1,15 @@
 #!/bin/bash
 
-sudo apt install aptitude
+sudo apt -y install aptitude
 sudo aptitude update
-sudo aptitude safe-upgrade
-sudo aptitude install git vim
+sudo aptitude -y safe-upgrade
+sudo aptitude -y install git vim
 
-cat > .bash_aliases <<TXT
+cat > ~/.bash_aliases <<TXT
 alias ll="ls -l"
 TXT
 
-cat > .vimrc <<TXT
+cat > ~/.vimrc <<TXT
 set autoindent
 set nu
 set expandtab
