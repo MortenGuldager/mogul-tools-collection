@@ -39,3 +39,4 @@ Host github.com-$REPO_NAME_CLEAN
 
 TXT
 done > ~/.ssh/config
+chmod og-rwx ~/.ssh/config
