@@ -2,7 +2,7 @@
 
 sudo apt install aptitude
 sudo aptitude update
-sudo aptitue safe-upgrade
+sudo aptitude safe-upgrade
 sudo aptitude install git vim
 
 cat > .bash_aliases <<TXT
