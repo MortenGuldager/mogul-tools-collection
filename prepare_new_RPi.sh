@@ -1,4 +1,4 @@
-/#!/bin/bash
+#!/bin/bash
 
 sudo apt install aptitude
 sudo aptitude update
