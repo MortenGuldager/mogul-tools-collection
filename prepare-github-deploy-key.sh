@@ -22,6 +22,10 @@ echo -e "\nThis is your public ssh key, copy-paste is as a deploy key in github:
 
 cat ~/.ssh/$REPO_NAME_CLEAN-id_rsa.pub
 
+
+echo -e "\nTo do so visit:\n"
+echo https://github.com/$REPO_NAME/settings/keys/new
+
 echo -e "\nAnd this is how to clone the repo once the deploy key is installed:\n"
 
 echo "git clone git@github.com-$REPO_NAME_CLEAN:$REPO_NAME.git"
