@@ -42,5 +42,7 @@ Host github.com-$REPO_NAME_CLEAN
     IdentityFile=~/.ssh/$REPO_NAME_CLEAN-id_rsa
 
 TXT
-done > ~/.ssh/config
-chmod og-rwx ~/.ssh/config
+done > ~/.ssh/config-dep-keys
+chmod og-rwx ~/.ssh/config-dep-keys
+
+grep -q 'include config-dep-keys' ~/.ssh/config || echo 'include config-dep-keys' >> ~/.ssh/config
