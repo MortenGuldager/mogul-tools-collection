@@ -44,5 +44,5 @@ Host github.com-$REPO_NAME_CLEAN
 TXT
 done > ~/.ssh/config-dep-keys
 chmod og-rwx ~/.ssh/config-dep-keys
-
+touch ~/.ssh/config
 grep -q 'include config-dep-keys' ~/.ssh/config || echo 'include config-dep-keys' >> ~/.ssh/config
